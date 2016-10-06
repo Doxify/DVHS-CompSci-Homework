@@ -10,7 +10,8 @@ public class Main{
 
     public static void main(String[]args){
 
-/*      double dub1;
+/*      // this asks the user for three doubles, then finds the average of them, and displays it as an integer
+        double dub1;
         double dub2;
         double dub3;
 
@@ -31,7 +32,7 @@ public class Main{
         System.out.print("Your total is: " + total2);
 
 */
-
+        //this asks the user for three integers, then finds the average of them, and displays it as a double
         int int1;
         int int2;
         int int3;

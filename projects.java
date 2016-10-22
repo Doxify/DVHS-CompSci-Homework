@@ -25,25 +25,34 @@ public class Main {
         // this is the first project
         } if (project == 1){
 
-            double a1, a2, b1, b2;
+            double x1, x2, y1, y2;
 
             // this is how you get the user to input numbers
             System.out.print("\nProject 1 Selected! \n \nPlease enter your first point in the following format (X Y): ");
-            a1 = scan.nextDouble();
-            a2 = scan.nextDouble();
+            x1 = scan.nextDouble();
+            y1 = scan.nextDouble();
 
             System.out.print("Please enter your second point in the following format (X Y): ");
-            b1 = scan.nextDouble();
-            b2 = scan.nextDouble();
+            x2 = scan.nextDouble();
+            y2 = scan.nextDouble();
 
             //formula
+            /*
+            d=((x2-x1)2+(y2-y1)2)½
+            Write your code and test with
+            x1=0
+            x2=3
+            y1=0
+            y2=4
+            your result should be 5.0
+             */
+            double formula1 = (x2 - x1) * (x2 - x1);
+            double formula2 = (y2 - y1) * (y2 - y1);
+            double formula3 = formula1 + formula2;
+            double total = formula3 / 5;
 
-            double formula1 = a1 - b1;
-            double formula2 = a2 - b2;
-            double formula3 = (formula1 * formula1) + (formula2 * formula2);
 
-
-            System.out.print("\nThe distance is: " + formula3 );
+            System.out.print("\nThe distance is: " + total);
 
 
         // this is the second project
